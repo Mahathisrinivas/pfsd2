@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking</title>
+    <style>
+        form {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  input[type=text],
+  input[type=number],
+  input[type=date] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  input[type=submit]:hover {
+    background-color: #3e8e41;
+  }
+    </style>
+</head>
+<body>
+<form action="/payment">
+  <label for="name">Name:</label>
+  <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+  <label for="persons">Number of persons:</label>
+  <input type="number" name="persons" id="persons" placeholder="Enter the number of persons" min="1" max="10" required>
+
+  <label for="staydays">Days of Stay:</label>
+  <input type="number" name="staydays" id="staydays" placeholder="Enter the number of days of stay" min="1" max="30" required>
+
+  <label for="checkin">Check in date:</label>
+  <input type="date" name="checkin" id="checkin" placeholder="dd/mm/yyyy" required>
+
+ <label for="checkout">Check out date:</label>
+  <input type="date" name="checkout" id="checkout" placeholder="dd/mm/yyyy" required>
+
+  <br>
+  <br>
+  <input type="submit" value="Proceed to payment">
+</form>
+</body>
+</html>

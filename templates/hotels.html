@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% load static %}
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Spicy+Rice&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static "css/styleone.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/bootstrap.css' %}" />
+    <style type="text/css">
+      .hotel2.png {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <div class="row" align="center">
+
+        <div class="col-sm-4">
+          <div class="card h-100">
+            <img class="card-img-top" src="{% static 'img/novotel.jpg' %}" alt="Card image cap" height="310">
+            <div class="card-body">
+              <h5 class="card-title">NOVOTEL</h5>
+              <p class="card-text"><br> 1 day-1 Nights<br>Price=6999<br></p>
+              <form action="/book">
+                <button type="submit" class="btn btn-primary">Confirm Your Booking</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card h-100">
+            <img class="card-img-top" src="{% static 'img/hotel2.png' %}" alt="Card image cap" height="310">
+            <div class="card-body">
+              <h5 class="card-title">MARRIOTT</h5>
+              <p class="card-text"><br> 1 day-1 Night<br> price=49999</p>
+              <form action="/book">
+                <button type="submit" class="btn btn-primary">Confirm Your Booking</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card h-100">
+            <img src="https://media.radissonhotels.net/image/radisson-hotel-bareilly-airport/exterior/16256-127205-f72224814_3xl.jpg?impolicy=Card" alt="Card image cap" height="310">
+            <div class="card-body">
+              <h5 class="card-title">RADISSON</h5>
+              <p class="card-text"><br> 1 day-1 Night<br> price=49999</p>
+              <form action="/book">
+                <button type="submit" class="btn btn-primary">Confirm Your Booking</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card h-100">
+            <img src="https://www.kayak.co.in/rimg/himg/60/e4/7b/leonardo-4094-167885727-572819.jpg?width=1366&height=768&crop=true" alt="Card image cap" height="310">
+            <div class="card-body">
+              <h5 class="card-title">SHERATON</h5>
+              <p class="card-text"><br> 1 day-1 Night<br> price=49999</p>
+              <form action="/book">
+                <button type="submit" class="btn btn-primary">Confirm Your Booking</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card h-100">
+            <img class="card-img-top" src="{% static 'img/lm.jpg' %}" alt="Card image cap" height="310">
+            <div class="card-body">
+              <h5 class="card-title">LALITHA MAHAL PALACE</h5>
+              <p class="card-text"><br> 1 days-1 Nights</p>
+              <form action="/book">
+                <button type="submit" class="btn btn-primary">Confirm Your Booking</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card h-100">
+            <img class="card-img-top" src="{% static 'img/hotel3.png' %}" alt="Card image cap" height="310">
+            <div class="card-body">
+              <h5 class="card-title">HYATT</h5>
+              <p class="card-text"><br> 1 day-1 Nights</p>
+              <form action="/book">
+                <button type="submit" class="btn btn-primary">Confirm Your Booking</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
